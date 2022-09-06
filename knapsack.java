@@ -61,7 +61,7 @@ p[j+1]=temp;
 }
 }
 }
-static void knapsack1(int n,int m,float w[],float p[])
+static void knapsack1(int m,int n,float w[],float p[])
 {
 float x[]=new float[n+1];
 float tp=0;
@@ -76,7 +76,7 @@ break;
 else
 {
 x[i]=1;
-tp=tp+1;
+tp=tp+p[i];
 u=(int)(u-w[i]);
 }
 }
