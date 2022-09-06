@@ -9,16 +9,17 @@ int w;
 Scanner sc = new Scanner(System.in);
 System.out.println("Enter the number of items: \n");
 n = sc.nextInt();
+ System.out.println("Enter the capacity of kanpsack \n");
+capacity = sc.nextInt();
 int weight[]=new int[n+1],value[] = new int[n+1];
-int V[][]=new int[n+2][n+2];
+int V[][]=new int[n+2][capacity+2];
 System.out.println("\nWEIGHTS - VALUES");
 for(i=1;i<=n;i++)
 {
 weight[i]=sc.nextInt();
 value[i] = sc.nextInt();
 }
-System.out.println("Enter the capacity of kanpsack \n");
-capacity = sc.nextInt();
+
 for(i=0;i<=n;i++)
 {
  for(j=0;j<=capacity;j++)
